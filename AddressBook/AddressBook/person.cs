@@ -17,7 +17,7 @@ namespace addressbook
         Dictionary<string, List<string>> ByState = new Dictionary<string, List<string>>();
 
 
-        contacts contacts;
+        contacts? contacts;
 
         public void createcontacts()
         {
@@ -359,7 +359,7 @@ namespace addressbook
         }
         public void WriteTextFile()
         {
-            string file = @"C:\prasanna\prasanna bridgelabzs\addressbook\addressbook\ContactsFile.txt";
+            string file = @"C:\Users\hp\Documents\Repository\AddressBook_Day-9-10-27-28\AddressBook\AddressBook\ContactsFile.txt";
             using StreamWriter writer = File.AppendText(file);
             {
                 Console.WriteLine("First Name, LastName, Address, City, State, Zip Code, Phone Number, Email-(Use Comma Separator)");
